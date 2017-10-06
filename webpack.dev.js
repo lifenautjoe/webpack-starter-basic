@@ -34,18 +34,28 @@ module.exports = {
                 use: [
                     {
                         // creates style nodes from JS strings
-                        loader: "style-loader"
-                    }, {
-                        // translates CSS into CommonJS
-                        loader: "css-loader"
-                    }, {
-                        // compiles Sass to CSS
-                        loader: "sass-loader"
+                        loader: "style-loader",
+                        options: {
+                            sourceMap: true
+                        }
                     },
                     {
-                        // Runs compiled CSS through postcss for vendor prefixing
-                        loader: 'postcss-loader'
+                        // translates CSS into CommonJS
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        // compiles Sass to CSS
+                        loader: "sass-loader",
+                        options: {
+                            outputStyle: 'expanded',
+                            sourceMap: true,
+                            sourceMapContents: true
+                        }
                     }
+                    // Please note we are not running postcss here
                 ]
             }
             ,
