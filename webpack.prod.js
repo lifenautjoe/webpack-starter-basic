@@ -10,12 +10,6 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
-            inject: false
-        })
-    ],
     module: {
         rules: [
             {
@@ -52,12 +46,29 @@ module.exports = {
                     ],
                     fallback: 'style-loader'
                 })
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            name: '[name].[hash:20].[ext]',
+                            // Load all images as base64 encoding if they are smaller than 8192 bytes
+                            limit: 8192
+                        }
+                    }
+                ]
             }
         ]
     },
 
     plugins: [
         new UglifyJSPlugin(),
-        new ExtractTextPlugin('styles.[contentHash].css')
+        new ExtractTextPlugin('styles.[contentHash].css'),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            inject: 'body',
+        })
     ]
 };
