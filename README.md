@@ -7,8 +7,10 @@ Read more on the [website](www.google.com) or get started right away:
 ```sh
  git clone https://github.com/lifenautjoe/webpack3-starter
  cd webpack3-starter
- npm run start // start the development server
- npm run build // build for production
+ # start the development server
+ npm run start
+ # build for production
+ npm run build
 ```
 ___
 Author [Joel Hernandez](www.lifenautjoe.com)
