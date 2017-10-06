@@ -77,6 +77,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(buildPath),
         new UglifyJSPlugin({
+            sourceMap: true,
             output: {
                 comments: false
             }
