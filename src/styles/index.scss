@@ -1,24 +1,195 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+}
+
+a{
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+    outline:none;
+    font-weight: 300;
+    background-color: #1dce94;
+    border: none;
+    border-radius: 500px;
+    color: white;
+    padding:0.5rem 1rem;
+    transition: all 0.3s;
+
+    &:hover{
+        color: #1dce94;
+        background-color: white;
+    }
+
+    &:active{
+        background-color: #cbcbcb;
+    }
+}
 
 .splash {
-  /* Location of the image */
-  background-image: url('../assets/background.jpg');
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
 
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
+    .splash__content {
+        position: relative;
+        top: 5%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0.5rem 1rem;
+        max-width: 480px;
+    }
 
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
+        .splash-title {
+            margin-bottom: 1rem;
+            max-width: 200px;
+            height: auto;
+        }
 
-  /* Background image is fixed in the viewport so that it doesn't move when
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
+            .splash-title__img{
+                height: auto;
+                width: 100%;
+                color: white;
+                margin: 0;
+                padding:0.5rem 1rem;
+            }
 
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
 
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  background-color: #464646;
+        .splash-overview{
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 12px 0 rgba(0,0,0,0.1), 0 10px 25px 0 rgba(0,0,0,0.2);
+            margin-bottom: 4rem;
+        }
 
+            .splash-overview-footer{
+                padding: 2rem;
+                background-color: white;
+                font-size: 80%;
+            }
+
+            .splash-overview__heading{
+                padding:1.5rem;
+                margin:0;
+            }
+
+            .splash-overview__star{
+                margin-bottom: 2rem;
+            }
+
+            .splash-overview__details{
+                background-color: #323bff;
+                color: white;
+                padding:2rem;
+            }
+
+                .splash-overview-plugins{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 2rem;
+                    background-color: rgba(0,0,0,0.4);
+                    padding:1rem;
+                }
+
+                    .splash-overview-plugins__list{
+                        text-align: center;
+                        margin:0;
+                        padding: 0;
+                        list-style: none;
+                        padding-top: 1.4rem;
+                        transition: all 1s ease-out;
+                        display: none;
+                        &--visible{
+                            display: block;
+                        }
+                    }
+
+                        .splash-overview-plugins__item{
+                            margin-bottom: 1rem;
+                        }
+
+                .splash-overview__conclusion{
+                    background-color: #ff4970;
+                    color: white;
+                    padding:2rem;
+                }
+
+                .splash-overview-start{
+                    font-size: 80%;
+                    background-color: #022b36;
+                    color: #c6c6c6;
+                    padding:2rem;
+                    text-align: left;
+                }
+
+                    .splash-overview-start__command{
+                        margin-bottom: 0.3rem;
+                        &:before {
+                            content: '$';
+                            font-weight: bold;
+                            margin-right: 0.2rem;
+                        }
+                    }
+
+                    .splash-overview-start__comment{
+                        color: #A3A3A3;
+                    }
+
+                .splash-overview-issues{
+                    background-color: #fd8c68;
+                    color: white;
+                    padding:2rem;
+                }
+
+
+* { box-sizing: border-box; }
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+    .vid-info { width: 50%; padding: .5rem; }
+    .vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym { display: none; }
 }

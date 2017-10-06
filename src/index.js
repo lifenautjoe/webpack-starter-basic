@@ -5,10 +5,14 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 
-export class MyClass{
-    constructor(){
-        console.log('Yo');
-    }
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-new MyClass();
+    const pluginsTriggerElement = document.getElementById('plugins-trigger');
+    const pluginsElement = document.getElementById('plugins');
+
+    const pluginsVisibleClass = "splash-overview-plugins__list";
+
+    pluginsTriggerElement.onclick = () => {
+        pluginsElement.classList.toggle(pluginsVisibleClass);
+    }
+});
