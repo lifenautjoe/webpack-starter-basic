@@ -5,4 +5,10 @@
 require('normalize.css/normalize.css');
 require('./styles/index.scss');
 
-console.log('I work!');
+export class MyClass{
+    constructor(){
+        console.log('Yo');
+    }
+}
+
+new MyClass();

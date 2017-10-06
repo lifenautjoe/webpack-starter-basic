@@ -3,6 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    devtool: 'eval-cheap-module-source-map',
     entry: './src/index.js',
     output: {
         filename: '[name].[hash:20].js',

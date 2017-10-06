@@ -1,14 +1,20 @@
 const path = require('path');
+const webpack = require('webpack');
 
+const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+
+const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
+    devtool: 'source-map',
     entry: './src/index.js',
     output: {
         filename: '[name].[hash:20].js',
-        path: path.resolve(__dirname, 'dist')
+        path: buildPath
     },
     module: {
         rules: [
@@ -33,19 +39,24 @@ module.exports = {
                             }
                         },
                         {
-                            // compiles Sass to CSS
-                            loader: 'sass-loader',
+                            // Runs compiled CSS through postcss for vendor prefixing
+                            loader: 'postcss-loader',
                             options: {
                                 sourceMap: true
                             }
                         },
                         {
-                            // Runs compiled CSS through postcss for vendor prefixing
-                            loader: 'postcss-loader'
+                            // compiles Sass to CSS
+                            loader: 'sass-loader',
+                            options: {
+                                outputStyle: 'expanded',
+                                sourceMap: true,
+                                sourceMapContents: true
+                            }
                         }
                     ],
                     fallback: 'style-loader'
-                })
+                }),
             },
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
@@ -64,10 +75,30 @@ module.exports = {
     },
 
     plugins: [
-        new UglifyJSPlugin(),
-        new ExtractTextPlugin('styles.[contentHash].css'),
+        new CleanWebpackPlugin(buildPath),
+        new UglifyJSPlugin({
+            output: {
+                comments: false
+            }
+        }),
+        new ExtractTextPlugin('styles.[contentHash].css', {
+            allChunks: true
+        }),
+        new OptimizeCssAssetsPlugin({
+            cssProcessor: require('cssnano'),
+            cssProcessorOptions: {
+                map: {
+                    inline: false,
+                },
+                discardComments: {
+                    removeAll: true
+                }
+            },
+            canPrint: true
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
+            // Inject the js bundle at the end of the body of the given template
             inject: 'body',
         })
     ]
