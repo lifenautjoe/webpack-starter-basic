@@ -7,7 +7,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[hash:20].js',
         path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -48,13 +48,13 @@ module.exports = {
                 })
             },
             {
+                // Load all images as base64 encoding if they are smaller than 8192 bytes
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
                         loader: 'url-loader',
                         options: {
                             name: '[name].[hash:20].[ext]',
-                            // Load all images as base64 encoding if they are smaller than 8192 bytes
                             limit: 8192
                         }
                     }

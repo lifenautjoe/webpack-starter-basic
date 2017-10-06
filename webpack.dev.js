@@ -5,11 +5,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[hash:20].js',
         path: path.resolve(__dirname, 'dist')
     },
     devServer: {
-        port: 9000,
+        port: 8080,
         contentBase: path.join(__dirname, "dist")
     },
     plugins: [
@@ -49,6 +49,7 @@ module.exports = {
             }
             ,
             {
+                // Load all images as base64 encoding if they are smaller than 8192 bytes
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
