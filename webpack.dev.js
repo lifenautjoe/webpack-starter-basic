@@ -5,10 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
     entry: './src/index.js',
-    output: {
-        filename: '[name].[hash:20].js',
-        path: path.resolve(__dirname, 'dist')
-    },
     devServer: {
         port: 8080,
         contentBase: path.join(__dirname, "dist")
@@ -66,7 +62,8 @@ module.exports = {
                     {
                         loader: 'url-loader',
                         options: {
-                            name: '[name].[hash:20].[ext]',
+                            // On development we want to see where the file is coming from, hence we preserve the [path]
+                            name: '[path][name].[ext]?hash=[hash:20]',
                             limit: 8192
                         }
                     }
