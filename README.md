@@ -1,9 +1,38 @@
 # webpack3-starter
 [![forthebadge](http://forthebadge.com/images/badges/fo-real.svg)](http://forthebadge.com)[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-A simple **webpack3 starter project** for all your web development needs.
+[![dependencies](https://david-dm.org/lifenautjoe/webpack3-starter.svg)](https://david-dm.org/lifenautjoe/webpack3-starter)
 
-Read more on the [website](https://lifenautjoe.github.io/webpack3-starter/) or get started right away:
+A simple **webpack3 starter project** for your web development needs.
+
+Read more on the [demo website](https://lifenautjoe.github.io/webpack3-starter/) or continue reading below.
+
+## Motivation
+
+I needed to make a drop your mail to stay updated of an ongoing developments page.
+
+Using a frontend framework for this was silly, plus, I wanted an SEO friendly page without the need of a dedicated server.
+
+In a nutshell: **I needed a starter project that would let me use sass, ES6, load assets, add vendor prefixes, have a dev server, generate sourcemaps and optimize everything for production.**
+
+I looked around and all I found were heavily specialized webpack starter projects (`webpack-angular-starter`, `webpack-react-starter`, etc)   full of obscure configuration settings like `if (process.env.DEVTOOLS !== 'custom' && process.env.IS_KNOWN_ENV && common.config.helpers.loadPlugins())` 
+and plugins configured in such an intertwined way that stripping undesired functionality is almost impossible. 
+
+So I did this.
+
+## Features
+
+* Separated development and production webpack settings that you can understand.
+* Sass
+* ES6
+* Asset loading
+* CSS Vendor prefixing
+* Development server
+* Sourcemaps
+* Production optimizations
+
+## Usage
+
 ```sh
  git clone https://github.com/lifenautjoe/webpack3-starter
  cd webpack3-starter
@@ -12,6 +41,7 @@ Read more on the [website](https://lifenautjoe.github.io/webpack3-starter/) or g
  # build for production
  npm run build
 ```
+
 ___
 Author [Joel Hernandez](www.lifenautjoe.com)
 
