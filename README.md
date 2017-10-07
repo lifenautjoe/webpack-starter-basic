@@ -1,11 +1,11 @@
-# webpack3-starter
+# webpack-starter-basic
 [![forthebadge](http://forthebadge.com/images/badges/fo-real.svg)](http://forthebadge.com)[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-[![dependencies](https://david-dm.org/lifenautjoe/webpack3-starter.svg)](https://david-dm.org/lifenautjoe/webpack3-starter)
+[![dependencies](https://david-dm.org/lifenautjoe/webpack-starter-basic.svg)](https://david-dm.org/lifenautjoe/webpack-starter-basic)
 
 A simple **webpack3 starter project** for your web development needs.
 
-Read more on the [demo website](https://lifenautjoe.github.io/webpack3-starter/) or continue reading below.
+Read more on the [demo website](https://lifenautjoe.github.io/webpack-starter-basic/) or continue reading below.
 
 ## Motivation
 
@@ -32,8 +32,8 @@ So I did this.
 ## Usage
 
 ```sh
- git clone https://github.com/lifenautjoe/webpack3-starter
- cd webpack3-starter
+ git clone https://github.com/lifenautjoe/webpack-starter-basic
+ cd webpack-starter-basic
  # start the development server
  npm run start
  # build for production
