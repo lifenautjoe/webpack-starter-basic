@@ -29,15 +29,44 @@ So I did this.
 * Favicons generation
 * Production optimizations
 
+## Requirements
+
+* [Node](https://nodejs.org) > 7.6
+
 ## Usage
 
+Substitute `PROJECT-NAME` for your project name.
+
+Clone the repository
+
 ```sh
- git clone https://github.com/lifenautjoe/webpack-starter-basic
- cd webpack-starter-basic
- # start the development server
- npm run start
- # build for production
- npm run build
+ git clone https://github.com/lifenautjoe/webpack-starter-basic PROJECT-NAME
+ cd PROJECT-NAME
+```
+
+Install npm dependencies
+
+```sh
+ npm install 
+```
+
+Run the kickstart command
+```sh
+npm run kickstart
+```
+
+**After the project has been kickstarted**
+
+To start the development server
+
+```sh
+npm start
+```
+
+To build for production
+
+```sh
+npm run build
 ```
 
 ## FAQ
@@ -51,8 +80,7 @@ You should use this starter if any of the following are true:
 
 If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
 configuration but it's normally complicated and quirky enough that it's highly recommended to use one of the existing 
-starter projects such as [https://github.com/alicoding/react-webpack-babel](react-webpack-babel) or for angular projects the [https://github.com/angular/angular-cli](angular-cli).
-
+starter projects such as [react-webpack-babel](https://github.com/alicoding/react-webpack-babel) or for angular projects the [angular-cli](https://github.com/angular/angular-cli).
 
 ___
 Author [Joel Hernandez](www.lifenautjoe.com)
