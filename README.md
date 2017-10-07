@@ -26,6 +26,7 @@ So I did this.
 * CSS Vendor prefixing
 * Development server
 * Sourcemaps
+* Favicons generation
 * Production optimizations
 
 ## Usage
