@@ -75,7 +75,7 @@ npm run build
 
 You should use this starter if any of the following are true:
 
-* You want to make a static page. e.g. splash, onboarding, phaser games, threejs visualizations, and countdowns pages.
+* You want to make a static page. e.g. splash screen, onboarding screen, phaser game, threejs visualization, countdown.
 * You found no good starter kit for whatever I want to do so I need to configure a webpack project myself but don't know where to start.
 
 **Please note**: If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
