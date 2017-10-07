@@ -73,8 +73,12 @@ module.exports = {
             }
         ]
     },
-
     plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html',
+            // Inject the js bundle at the end of the body of the given template
+            inject: 'body',
+        }),
         new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
             // Your source logo
@@ -125,11 +129,6 @@ module.exports = {
                 }
             },
             canPrint: true
-        }),
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
-            // Inject the js bundle at the end of the body of the given template
-            inject: 'body',
         })
     ]
 };

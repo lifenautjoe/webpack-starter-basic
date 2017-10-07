@@ -9,12 +9,6 @@ module.exports = {
         port: 8080,
         contentBase: path.join(__dirname, "dist")
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
-            inject: true
-        })
-    ],
     module: {
         rules: [
             {
@@ -70,5 +64,11 @@ module.exports = {
                 ]
             }
         ],
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './index.html',
+            inject: true
+        })
+    ]
 };
