@@ -78,7 +78,7 @@ You should use this starter if any of the following are true:
 * You want to make a static page. e.g. splash, onboarding, phaser games, threejs visualizations, and countdowns pages.
 * You found no good starter kit for whatever I want to do so I need to configure a webpack project myself but don't know where to start.
 
-If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
+**Please note**: If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
 configuration but it's normally complicated and quirky enough that it's highly recommended to use one of the existing 
 starter projects such as [react-webpack-babel](https://github.com/alicoding/react-webpack-babel) or for angular projects the [angular-cli](https://github.com/angular/angular-cli).
 
