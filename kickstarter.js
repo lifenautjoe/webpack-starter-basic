@@ -58,6 +58,9 @@ async function kickstart() {
     ui.log.write('Writing new package.json');
     fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 4));
 
+    ui.log.write('Removing package-lock.json');
+    fs.unlinkSync('./package-lock.json');
+
     ui.log.write('Removing kickstarter script');
     fs.unlinkSync('./kickstarter.js');
 
