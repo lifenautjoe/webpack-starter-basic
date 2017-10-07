@@ -11,7 +11,7 @@ Read more on the [demo website](https://lifenautjoe.github.io/webpack3-starter/)
 
 I needed to make a plain ol' "drop your mail to stay updated of an ongoing developments" page.
 
-I didn't need anything fancy, no frontend framework, no unit testing, simply a **starter project that would let me use sass, ES6, load assets, add vendor prefixes, have a dev server, generate sourcemaps and optimize everything for production.**
+I didn't need anything fancy, no frontend framework, no unit testing, simply a **starter project that would let me use sass, ES6, load assets, add vendor prefixes, start a dev server, generate sourcemaps and optimize everything for production.**
 
 I looked around and all I found were heavily specialized webpack starter projects (`webpack-angular-starter`, `webpack-react-starter`, etc) full of obscure configuration settings like `if (process.env.DEVTOOLS !== 'custom' && process.env.IS_KNOWN_ENV && common.config.helpers.loadPlugins())` 
 and plugins configured in such an intertwined way that stripping undesired functionality is almost impossible. 
@@ -20,7 +20,7 @@ So I did this.
 
 ## Features
 
-* Webpack settings you can understand
+* Separated development and production webpack settings you can understand
 * Sass
 * ES6
 * Asset loading
