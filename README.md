@@ -9,7 +9,7 @@ Read more on the [demo website](https://lifenautjoe.github.io/webpack-starter-ba
 
 ## Motivation
 
-I needed to make a plain ol' "drop your mail to stay updated of an ongoing developments" page.
+I needed to make a plain ol' "drop your mail to stay updated of ongoing developments" page.
 
 I did not need anything fancy, no frontend framework, no unit testing, simply a **starter project that would let me use sass, ES6, load assets, add vendor prefixes, start a dev server, generate sourcemaps and optimize everything for production.**
 
