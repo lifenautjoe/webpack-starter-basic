@@ -82,6 +82,17 @@ You should use this starter if any of the following are true:
 configuration but it's normally complicated and quirky enough that it's highly recommended to use one of the existing 
 starter projects such as [react-webpack-babel](https://github.com/alicoding/react-webpack-babel) or for angular projects the [angular-cli](https://github.com/angular/angular-cli).
 
+### Where's the common webpack config?
+
+**There is none and that is good thing.**
+
+The pattern creates unnecessary confusion over the setup, at the end the config will always be different across environments.
+People just put booleans everywhere on the common config to switch between these differing configuration options which is just awful to see and confusing for someone who's just starting on webpack.
+
+The only truly shared config between these files are the entry js point and the main html template.
+
+
+
 ___
 Author [Joel Hernandez](www.lifenautjoe.com)
 
