@@ -193,7 +193,7 @@ You can add it and use it in `index.scss` as
 
 #### In JavaScript
 
-You can require an image from your JavaScript like
+You can require an image from JavaScript like
 ```js
 const myImage = require('./assets/icon.png');
 ```
