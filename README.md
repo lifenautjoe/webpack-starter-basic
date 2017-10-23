@@ -7,6 +7,20 @@ A simple **webpack3 starter project** for your basic web development needs.
 
 Read more on the [demo website](https://lifenautjoe.github.io/webpack-starter-basic/) or continue reading below.
 
+## Table of Contents
+
+- [Motivation](#motivation)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [FAQ](#faq)
+  * [When should I use this starter?](#when-should-i-use-this-starter)
+  * [Where's the common webpack config?](#wheres-the-common-webpack-config)
+  * [How to load fonts](#how-to-load-fonts)
+  * [How to load images](#how-to-load-images)
+    + [In JavaScript](#in-javascript)
+    + [In `index.html`](#in-indexhtml)
+
 ## Motivation
 
 I needed to make a plain ol' "drop your mail to stay updated of ongoing developments" page.
@@ -71,6 +85,25 @@ npm run build
 
 ## FAQ
 
+### When should I use this starter?
+
+You should use this starter if any of the following are true:
+
+* You want to make a static page. e.g. splash screen, onboarding screen, phaser game, threejs visualization, countdown.
+* You found no good starter kit for whatever you want to do and need a solid place to start from.
+
+**Please note**: If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
+configuration but it's normally complicated and quirky enough that it's highly recommended to use one of the existing 
+starter projects such as [react-webpack-babel](https://github.com/alicoding/react-webpack-babel) or for angular projects the [angular-cli](https://github.com/angular/angular-cli).
+
+### Where's the common webpack config?
+
+**There is none and that is good thing.**
+
+The pattern creates unnecessary confusion over the setup, at the end the config will always be different across environments.
+People just put booleans everywhere on the common config to switch between these differing configuration options which is just awful to see and confusing for someone who's just starting on webpack.
+
+The only truly shared config between these files are the entry js point and the main html template.
 
 ### How to load fonts
 
@@ -188,29 +221,6 @@ If you would like to include an image on your `index.html` file, place the path 
                      src="<%= require('./src/assets/logo-on-dark-bg.png') %>"
                      alt="webpack logo"></a>
 ```
-
-
-### When should I use this starter?
-
-You should use this starter if any of the following are true:
-
-* You want to make a static page. e.g. splash screen, onboarding screen, phaser game, threejs visualization, countdown.
-* You found no good starter kit for whatever you want to do and need a solid place to start from.
-
-**Please note**: If you are going to use a frontend framework like angular or react, you can of course add the required plugins and 
-configuration but it's normally complicated and quirky enough that it's highly recommended to use one of the existing 
-starter projects such as [react-webpack-babel](https://github.com/alicoding/react-webpack-babel) or for angular projects the [angular-cli](https://github.com/angular/angular-cli).
-
-### Where's the common webpack config?
-
-**There is none and that is good thing.**
-
-The pattern creates unnecessary confusion over the setup, at the end the config will always be different across environments.
-People just put booleans everywhere on the common config to switch between these differing configuration options which is just awful to see and confusing for someone who's just starting on webpack.
-
-The only truly shared config between these files are the entry js point and the main html template.
-
-
 
 ___
 Author [Joel Hernandez](www.lifenautjoe.com)
