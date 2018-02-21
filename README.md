@@ -83,6 +83,11 @@ To build for production
 npm run build
 ```
 
+To preview the production build
+```sh
+npm run preview
+```
+
 ## FAQ
 
 ### When should I use this starter?
