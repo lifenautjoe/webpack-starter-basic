@@ -1,9 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
@@ -109,7 +109,7 @@ module.exports = {
                 windows: false
             }
         }),
-        new UglifyJSPlugin({
+        new webpack.optimize.UglifyJsPlugin({
             sourceMap: true,
             output: {
                 comments: false
