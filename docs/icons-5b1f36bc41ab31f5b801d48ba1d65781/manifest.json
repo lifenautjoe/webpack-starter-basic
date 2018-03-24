@@ -1,6 +1,6 @@
 {
-  "name": "{{projectName}}",
-  "short_name": "{{projectName}}",
+  "name": "Webpack Starter Basic",
+  "short_name": "Webpack Starter Basic",
   "description": null,
   "dir": "auto",
   "lang": "en-US",
