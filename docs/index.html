@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Webpack starter basic</title>
+    <title>Webpack Starter Basic</title>
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="Webpack basic starter project">
     <meta name="Description" content="A simple webpack starter project for your basic web development needs."/>
@@ -13,8 +13,14 @@
     <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/" />
     <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
     <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ff4970">
+    <!-- Mobile header color Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="{{mobileHeaderColor}}">
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="57x57" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Webpack starter basic"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Webpack starter basic"><link rel="icon" type="image/png" sizes="32x32" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-16x16.png"><link rel="shortcut icon" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1536x2008.png"><link href="styles.5f5c7da7b8848ec83c3f50f10588439d.css" rel="stylesheet"></head>
+<link rel="apple-touch-icon" sizes="57x57" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-icon-180x180.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Webpack Starter Basic"><meta name="mobile-web-app-capable" content="yes"><meta name="theme-color" content="#fff"><meta name="application-name" content="Webpack Starter Basic"><link rel="icon" type="image/png" sizes="32x32" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon-16x16.png"><link rel="shortcut icon" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/favicon.ico"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-320x460.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x920.png"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-640x1096.png"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-750x1294.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1182x2208.png"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1242x2148.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-748x1024.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-768x1004.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1496x2048.png"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="icons-5b1f36bc41ab31f5b801d48ba1d65781/apple-touch-startup-image-1536x2008.png"><link href="styles.de73248cd7905a4f68a216dee254362c.css" rel="stylesheet"></head>
 <body>
 <!-- DEMO Project page content STARTS -->
 <div class="video-background">
@@ -28,16 +34,16 @@
     <div class="splash__content">
         <div class="splash-title">
             <a href="https://github.com/lifenautjoe/webpack-starter-basic" target="_blank"><img class="splash-title__img"
-                                                                   src="logo-on-dark-bg.391700e0e9d785caf8a8.png"
+                                                                   src="logo-on-dark-bg.785d2785b5343146017b.png"
                                                                    alt="webpack logo"></a>
         </div>
         <div class="splash-overview">
-            <h1 class="splash-overview__heading">I'm a a simple webpack starter project for your basic web development needs.
+            <h1 class="splash-overview__heading">I'm a a simple webpack 4 starter project for your basic web development needs.
             </h1>
             <div class="splash-overview__star">
                 <!-- Place this tag where you want the button to render. -->
                 <a class="github-button" href="https://github.com/lifenautjoe/webpack-starter-basic" data-show-count="true"
-                   aria-label="Star lifenautjoe/webpack3-starter on GitHub">Star</a>
+                   aria-label="Star lifenautjoe/webpack-starter-basic on GitHub">Star</a>
             </div>
             <div class="splash-overview__conclusion">
                 <strong> No <a href="https://pragprog.com/the-pragmatic-programmer/extracts/wizards">wizard code</a>,
@@ -75,6 +81,9 @@
                         <li class="splash-overview-plugins__item">
                             <a target="_blank" href="https://github.com/jantimon/favicons-webpack-plugin">Generates favicons</a>
                         </li>
+                        <li class="splash-overview-plugins__item">
+                            <a target="_blank" href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">Adds mobile headers color</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -86,7 +95,7 @@
                     cd PROJECT-NAME
                 </div>
                 <div class="splash-overview-start__command">
-                    npm install <span class="splash-overview-start__comment"># Install npm dependencies</span>
+                    npm install <span class="splash-overview-start__comment"># Install dependencies </span>
                 </div>
                 <div class="splash-overview-start__command">
                     npm run kickstart <span class="splash-overview-start__comment"># Configure your project</span>
@@ -104,7 +113,7 @@
                     href="https://github.com/lifenautjoe/webpack3-starter/issues">here</a>. </strong>
             </div>
             <div class="splash-overview-footer">
-                A project by <strong><a target="_blank" href="https://www.lifenautjoe.com">@lifenautjoe</a></strong>.
+                A project by <strong><a target="_blank" href="https://www.instagram.com/lifenautjoe">@lifenautjoe</a></strong>.
             </div>
         </div>
     </div>
@@ -120,5 +129,5 @@
     gtag('config', 'UA-101423651-2');
 </script>
 <!-- DEMO Project page content ENDS -->
-<script type="text/javascript" src="main.fb5168b3d0b2b04d2cef.js"></script></body>
+<script type="text/javascript" src="main.d579593aa27ff892b9db.js"></script></body>
 </html>

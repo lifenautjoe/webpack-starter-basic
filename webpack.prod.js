@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
@@ -93,7 +92,7 @@ module.exports = {
             // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
             background: '#fff',
             // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-            title: 'Webpack starter basic',
+            title: '{{projectName}}',
 
             // which icons should be generated (see https://github.com/haydenbleasel/favicons#usage)
             icons: {
@@ -107,12 +106,6 @@ module.exports = {
                 twitter: false,
                 yandex: false,
                 windows: false
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            output: {
-                comments: false
             }
         }),
         new ExtractTextPlugin('styles.[contentHash].css', {

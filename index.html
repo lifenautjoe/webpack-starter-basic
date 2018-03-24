@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Webpack starter basic</title>
+    <title>{{projectName}}</title>
     <!-- Twitter Card data -->
     <meta name="twitter:card" value="Webpack basic starter project">
     <meta name="Description" content="A simple webpack starter project for your basic web development needs."/>
@@ -13,6 +13,12 @@
     <meta property="og:url" content="https://lifenautjoe.github.io/webpack-starter-basic/" />
     <meta property="og:image" content="https://i.snag.gy/i3eMBc.jpg" />
     <meta property="og:description" content="A simple webpack starter project for your basic web development needs." />
+    <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="{{mobileHeaderColor}}">
+    <!-- Mobile header color Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="{{mobileHeaderColor}}">
+    <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 </head>
 <body>
@@ -32,12 +38,12 @@
                                                                    alt="webpack logo"></a>
         </div>
         <div class="splash-overview">
-            <h1 class="splash-overview__heading">I'm a a simple webpack starter project for your basic web development needs.
+            <h1 class="splash-overview__heading">I'm a a simple webpack 4 starter project for your basic web development needs.
             </h1>
             <div class="splash-overview__star">
                 <!-- Place this tag where you want the button to render. -->
                 <a class="github-button" href="https://github.com/lifenautjoe/webpack-starter-basic" data-show-count="true"
-                   aria-label="Star lifenautjoe/webpack3-starter on GitHub">Star</a>
+                   aria-label="Star lifenautjoe/webpack-starter-basic on GitHub">Star</a>
             </div>
             <div class="splash-overview__conclusion">
                 <strong> No <a href="https://pragprog.com/the-pragmatic-programmer/extracts/wizards">wizard code</a>,
@@ -75,6 +81,9 @@
                         <li class="splash-overview-plugins__item">
                             <a target="_blank" href="https://github.com/jantimon/favicons-webpack-plugin">Generates favicons</a>
                         </li>
+                        <li class="splash-overview-plugins__item">
+                            <a target="_blank" href="https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android">Adds mobile headers color</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -104,7 +113,7 @@
                     href="https://github.com/lifenautjoe/webpack3-starter/issues">here</a>. </strong>
             </div>
             <div class="splash-overview-footer">
-                A project by <strong><a target="_blank" href="https://www.lifenautjoe.com">@lifenautjoe</a></strong>.
+                A project by <strong><a target="_blank" href="https://www.instagram.com/lifenautjoe">@lifenautjoe</a></strong>.
             </div>
         </div>
     </div>
