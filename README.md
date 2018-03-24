@@ -22,6 +22,7 @@ Read more on the [demo website](https://lifenautjoe.github.io/webpack-starter-ba
   * [How to load images](#how-to-load-images)
     + [In JavaScript](#in-javascript)
     + [In `index.html`](#in-indexhtml)
+- [Websites using this starter kit on the wild](#websites-using-this-starter-kit-on-the-wild)
 
 ## Motivation
 
@@ -229,6 +230,14 @@ If you would like to include an image on your `index.html` file, place the path 
                      src="<%= require('./src/assets/logo-on-dark-bg.png') %>"
                      alt="webpack logo"></a>
 ```
+
+## Websites using this starter kit on the wild
+
+* [ChooseIT Wishbot](http://voeux2018.choosit.com/)
+* [Webpack Starter Basic](https://lifenautjoe.github.io/webpack-starter-basic/)
+
+Have a website online built with this starter kit and would like to add it to the list? Open an issue!
+
 
 ___
 Author [Joel Hernandez](www.lifenautjoe.com)
