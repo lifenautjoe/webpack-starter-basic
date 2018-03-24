@@ -1,7 +1,7 @@
 {
-    "name": "webpack3-starter",
-    "version": "1.0.1",
-    "description": "A simple and reliable webpack3 starter kit for your web adventures needs.",
+    "name": "webpack-starter-basic",
+    "version": "2.0.0",
+    "description": "A simple and reliable webpack starter kit for your web adventures needs.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,18 +12,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lifenautjoe/webpack3-starter.git"
+        "url": "git+https://github.com/lifenautjoe/webpack-starter-basic.git"
     },
     "keywords": [
-        "webpack3",
+        "webpack4",
+        "webpack",
         "starter",
         "starter-kit",
         "kit",
         "webpack",
         "seed",
         "webpack-seed",
-        "webpack3-seed",
-        "webpack3-boilerplate",
+        "webpack4-seed",
+        "webpack4-boilerplate",
         "boilerplate",
         "javascript",
         "js",
@@ -35,9 +36,9 @@
     "author": "Joel Hernandez",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/lifenautjoe/webpack3-starter/issues"
+        "url": "https://github.com/lifenautjoe/webpack-starter-basic/issues"
     },
-    "homepage": "https://github.com/lifenautjoe/webpack3-starter#readme",
+    "homepage": "https://github.com/lifenautjoe/webpack-starter-basic#readme",
     "dependencies": {
         "normalize.css": "^8.0.0"
     },
