@@ -71,17 +71,14 @@ async function kickstart() {
     const webpackProdFile = fs.readFileSync('./webpack.prod.js', 'utf8');
 
     ui.log.write('Setting page title to project name');
-    newIndex = indexFile.replace('{{projectTitle}}', projectName);
-    const newWebpackProdFile = webpackProdFile.replace('{{projectTitle}}', projectName);
+    newIndex = newIndex.replace('{{projectName}}', projectName);
+    const newWebpackProdFile = webpackProdFile.replace('{{projectName}}', projectName);
 
+    ui.log.write('Writing new index.html');
     fs.writeFileSync('./index.html', newIndex, 'utf8');
+    ui.log.write('Writing new webpack.prod.js');
     fs.writeFileSync('./webpack.prod.js', newWebpackProdFile, 'utf8');
 
-    ui.log.write('Removing kickstarter script');
-    fs.unlinkSync('./kickstarter.js');
-
-    ui.log.write('Removing .git directory');
-    rimraf.sync('.git');
 
     ui.log.write('All done!');
 }
