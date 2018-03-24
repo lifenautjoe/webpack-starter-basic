@@ -19,10 +19,16 @@ async function kickstart() {
             name: 'projectAuthor',
             message: `Who's the author?`,
             default: 'John Doe'
+        },
+        {
+            type: 'input',
+            name: 'mobileHeaderColor',
+            message: 'What color would you like the mobile header to be? (https://bit.ly/1LX2mtq)',
+            default: '#ff4970'
         }
     ]);
 
-    const {projectName, projectAuthor} = questions;
+    const {projectName, projectAuthor, mobileHeaderColor} = questions;
 
     ui.log.write('Removing /docs directory');
     rimraf.sync('./docs');
@@ -37,9 +43,6 @@ async function kickstart() {
     ui.log.write('Removing package.json git repository');
     packageJson.keywords = [];
     packageJson.repository.url = '';
-
-    ui.log.write('Removing .git directory');
-    rimraf.sync('.git');
 
     ui.log.write('Removing package.json kickstart dependencies');
     packageJson.kickstartDependencies.forEach((kickstartDependency) => {
@@ -61,8 +64,24 @@ async function kickstart() {
     ui.log.write('Removing package-lock.json');
     fs.unlinkSync('./package-lock.json');
 
+    const indexFile = fs.readFileSync('./index.html', 'utf8');
+
+    ui.log.write(`Setting mobile header color to ${mobileHeaderColor}`);
+    let newIndex = indexFile.replace('{{mobileHeaderColor}}', mobileHeaderColor);
+    const webpackProdFile = fs.readFileSync('./webpack.prod.js', 'utf8');
+
+    ui.log.write('Setting page title to project name');
+    newIndex = indexFile.replace('{{projectTitle}}', projectName);
+    const newWebpackProdFile = webpackProdFile.replace('{{projectTitle}}', projectName);
+
+    fs.writeFileSync('./index.html', newIndex, 'utf8');
+    fs.writeFileSync('./webpack.prod.js', newWebpackProdFile, 'utf8');
+
     ui.log.write('Removing kickstarter script');
     fs.unlinkSync('./kickstarter.js');
+
+    ui.log.write('Removing .git directory');
+    rimraf.sync('.git');
 
     ui.log.write('All done!');
 }
