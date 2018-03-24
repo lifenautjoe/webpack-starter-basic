@@ -3,7 +3,7 @@
 
 [![dependencies](https://david-dm.org/lifenautjoe/webpack-starter-basic.svg)](https://david-dm.org/lifenautjoe/webpack-starter-basic)
 
-A simple **webpack3 starter project** for your basic web development needs.
+A simple **webpack 4 starter project** for your basic web development needs.
 
 Read more on the [demo website](https://lifenautjoe.github.io/webpack-starter-basic/) or continue reading below.
 
@@ -42,6 +42,7 @@ So I did this.
 * Sourcemaps
 * Favicons generation
 * Production optimizations
+* Mobile browser header color
 
 ## Requirements
 
