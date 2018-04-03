@@ -78,7 +78,12 @@ async function kickstart() {
     fs.writeFileSync('./index.html', newIndex, 'utf8');
     ui.log.write('Writing new webpack.prod.js');
     fs.writeFileSync('./webpack.prod.js', newWebpackProdFile, 'utf8');
+    
+    ui.log.write('Removing kickstarter script');
+    fs.unlinkSync('./kickstarter.js');
 
+    ui.log.write('Removing .git directory');
+    rimraf.sync('.git');    
 
     ui.log.write('All done!');
 }
