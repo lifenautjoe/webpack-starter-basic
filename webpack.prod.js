@@ -108,7 +108,7 @@ module.exports = {
                 windows: false
             }
         }),
-        new ExtractTextPlugin('styles.[contentHash].css', {
+        new ExtractTextPlugin('styles.[md5:contenthash:hex:20].css', {
             allChunks: true
         }),
         new OptimizeCssAssetsPlugin({
