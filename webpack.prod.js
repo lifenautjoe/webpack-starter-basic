@@ -27,7 +27,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(scss|css)$/,
+                test: /\.(scss|css|sass)$/,
                 use: ExtractTextPlugin.extract({
                     use: [
                         {
