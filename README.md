@@ -233,6 +233,8 @@ If you would like to include an image on your `index.html` file, place the path 
 
 ## Websites using this starter kit on the wild
 
+* [Droppable library](https://github.com/lifenautjoe/droppable)
+* [Noel Event Emitter](https://github.com/lifenautjoe/noel)
 * [ChooseIT Wishbot](http://voeux2018.choosit.com/)
 * [Webpack Starter Basic](https://lifenautjoe.github.io/webpack-starter-basic/)
 
