@@ -237,6 +237,7 @@ If you would like to include an image on your `index.html` file, place the path 
 * [Noel Event Emitter](https://github.com/lifenautjoe/noel)
 * [ChooseIT Wishbot](http://voeux2018.choosit.com/)
 * [Webpack Starter Basic](https://lifenautjoe.github.io/webpack-starter-basic/)
+* [Openbook Org](https://www.open-book.org/)
 
 Have a website online built with this starter kit and would like to add it to the list? Open an issue!
 
