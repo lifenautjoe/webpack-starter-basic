@@ -67,7 +67,7 @@ async function kickstart() {
     const indexFile = fs.readFileSync('./index.html', 'utf8');
 
     ui.log.write(`Setting mobile header color to ${mobileHeaderColor}`);
-    let newIndex = indexFile.replace('{{mobileHeaderColor}}', mobileHeaderColor);
+    let newIndex = indexFile.replace(/##{{mobileHeaderColor}}##/g, mobileHeaderColor);
     const webpackProdFile = fs.readFileSync('./webpack.prod.js', 'utf8');
 
     ui.log.write('Setting page title to project name');
