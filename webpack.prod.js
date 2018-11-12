@@ -15,6 +15,9 @@ module.exports = {
         filename: '[name].[hash:20].js',
         path: buildPath
     },
+    node: {
+        fs: 'empty'
+    },
     module: {
         rules: [
             {
