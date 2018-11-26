@@ -44,6 +44,7 @@
     },
     "devDependencies": {
         "ajv": "^6.3.0",
+        "autoprefixer": "^9.3.1",
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.4",
         "babel-preset-env": "^1.7.0",
