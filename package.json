@@ -43,6 +43,7 @@
         "normalize.css": "^8.0.0"
     },
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^1.1.0",
         "ajv": "^6.3.0",
         "autoprefixer": "^9.3.1",
         "babel-core": "^6.26.3",
