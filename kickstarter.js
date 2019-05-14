@@ -72,7 +72,7 @@ async function kickstart() {
 
     ui.log.write('Setting page title to project name');
     newIndex = newIndex.replace(/{{projectName}}/g, projectName);
-    const newWebpackProdFile = webpackProdFile.replace(/{{projectName/g, projectName);
+    const newWebpackProdFile = webpackProdFile.replace(/{{projectName}}/g, projectName);
 
     ui.log.write('Writing new index.html');
     fs.writeFileSync('./index.html', newIndex, 'utf8');
