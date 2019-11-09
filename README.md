@@ -334,7 +334,7 @@ npm run preview
 ```
 
 
-⚠️ Please remember to remove the Google Analytics tag in the `index.html` file as soon as you make the template yours :-) 
+⚠️ Please remember to remove the Google Analytics tag in the `index.html` file as soon as you make the template yours.
 
 ```html
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
