@@ -334,6 +334,23 @@ npm run preview
 ```
 
 
+⚠️ Please remember to remove the Google Analytics tag in the `index.html` file as soon as you make the template yours :-) 
+
+```html
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-101423651-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-101423651-2');
+</script>
+```
+
+```sh
+npm run preview
+```
+
 
 ## Websites using this starter kit on the wild
 
