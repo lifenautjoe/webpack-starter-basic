@@ -347,10 +347,6 @@ npm run preview
 </script>
 ```
 
-```sh
-npm run preview
-```
-
 
 ## Websites using this starter kit on the wild
 
